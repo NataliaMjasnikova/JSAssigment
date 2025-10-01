@@ -23,3 +23,16 @@ console.log(text2);
 }
 
 
+function konverteraKmhTillMs(hastighet_kmh) {
+  const KONVERTERINGS_FAKTOR = 3.6;
+  const hastighet_ms = hastighet_kmh / KONVERTERINGS_FAKTOR;
+  return hastighet_ms;
+}
+
+
+const inputHastighet = 72;
+const outputHastighet = konverteraKmhTillMs(inputHastighet);
+console.log(`Input: ${inputHastighet}`);
+console.log(`Output: ${Math.round(outputHastighet)}`);
+
+
