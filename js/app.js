@@ -82,3 +82,13 @@ console.log("Uppgift 4: Cirkelarea ");
 console.log(`Input (Radie): ${radieInput}`);
 // .toFixed(2) används för att begränsa decimalerna till två.
 console.log(`Output (Area): ${areaOutput.toFixed(2)}`);
+
+function negeraTal(tal) {
+    return -tal;
+}
+const negationInput = 11; // Testa med ett positivt tal
+const negationOutput = negeraTal(negationInput);
+
+console.log("Uppgift 5: omvandla positiva tal till negativa");
+console.log(`Input: ${negationInput}`);
+console.log(`Output: ${negationOutput}`);
