@@ -67,3 +67,18 @@ const restOutput = beraknaRest(restInputA, restInputB);
 
 console.log(`Input: ${restInputA}, ${restInputB}`);
 console.log(`Output: ${restOutput}`);
+
+function beraknaCirkelArea(radie) {
+  // Math.PI är en inbyggd konstant för Pi (~3.14159...)
+  return Math.PI * radie * radie;
+}
+
+
+
+const radieInput = 2;
+const areaOutput = beraknaCirkelArea(radieInput);
+
+console.log("Uppgift 4: Cirkelarea ");
+console.log(`Input (Radie): ${radieInput}`);
+// .toFixed(2) används för att begränsa decimalerna till två.
+console.log(`Output (Area): ${areaOutput.toFixed(2)}`);
