@@ -36,3 +36,34 @@ console.log(`Input: ${inputHastighet}`);
 console.log(`Output: ${Math.round(outputHastighet)}`);
 
 
+function minuterTillSekunder(minuter) {
+  return minuter * 60;
+}
+function divideraTal(tal1, tal2) {
+  if (tal2 === 0) {
+    return "Kan inte dividera med noll";
+  }
+  return tal1 / tal2;
+}
+function beraknaRest(tal1, tal2) {
+  return tal1 % tal2;
+}
+const minuterInput = 3;
+const sekunderOutput = minuterTillSekunder(minuterInput);
+
+console.log(`Input: ${minuterInput}`);
+console.log(`Output: ${sekunderOutput}`);
+
+const divInputA = 11;
+const divInputB = 4;
+const divisionOutput = divideraTal(divInputA, divInputB);
+
+console.log(`Input: ${divInputA}, ${divInputB}`);
+console.log(`Output: ${divisionOutput}`);
+
+const restInputA = 11;
+const restInputB = 4;
+const restOutput = beraknaRest(restInputA, restInputB);
+
+console.log(`Input: ${restInputA}, ${restInputB}`);
+console.log(`Output: ${restOutput}`);
