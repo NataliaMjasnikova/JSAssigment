@@ -105,3 +105,19 @@ console.log("BMI-beräkning");
 console.log(`Input (Vikt, Längd): ${viktInput} kg, ${langdInput} m`);
 console.log(`Output (BMI): ${bmiOutput.toFixed(3)}`);
 
+
+/* Funktion för att beräkna längden av hypotenusan (c) med Pythagoras sats.
+ * Formel: c = sqrt(a² + b²)
+ * @returns {number} Längden på hypotenusan (Output: 5).
+ */
+function beraknaHypotenusa(sidaA, sidaB) {
+    return Math.sqrt(Math.pow(sidaA, 2) + Math.pow(sidaB, 2));
+}
+
+const sidaAInput = 3;
+const sidaBInput = 4;
+const hypotenusaOutput = beraknaHypotenusa(sidaAInput, sidaBInput);
+
+console.log("Hypotenusa (Pythagoras)");
+console.log(`Input (Sida A, Sida B): ${sidaAInput}, ${sidaBInput}`);
+console.log(`Output (Hypotenusa): ${hypotenusaOutput}`);
