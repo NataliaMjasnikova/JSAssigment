@@ -92,3 +92,16 @@ const negationOutput = negeraTal(negationInput);
 console.log("Uppgift 5: omvandla positiva tal till negativa");
 console.log(`Input: ${negationInput}`);
 console.log(`Output: ${negationOutput}`);
+
+function beraknaBMI(vikt_kg, langd_m) {
+  const langdKvadrat = Math.pow(langd_m, 2);
+  return vikt_kg / langdKvadrat;
+}
+const viktInput = 70; // Vikt i kg
+const langdInput = 1.82; // Längd i meter
+const bmiOutput = beraknaBMI(viktInput, langdInput);
+
+console.log("BMI-beräkning");
+console.log(`Input (Vikt, Längd): ${viktInput} kg, ${langdInput} m`);
+console.log(`Output (BMI): ${bmiOutput.toFixed(3)}`);
+
