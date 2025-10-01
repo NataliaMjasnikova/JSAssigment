@@ -121,3 +121,18 @@ const hypotenusaOutput = beraknaHypotenusa(sidaAInput, sidaBInput);
 console.log("Hypotenusa (Pythagoras)");
 console.log(`Input (Sida A, Sida B): ${sidaAInput}, ${sidaBInput}`);
 console.log(`Output (Hypotenusa): ${hypotenusaOutput}`);
+
+function sekunderTillMinuter(totalaSekunder) {
+  const SEKUNDER_I_EN_MINUT = 60;
+  const minuter = Math.floor(totalaSekunder / SEKUNDER_I_EN_MINUT);
+  const sekunder = totalaSekunder % SEKUNDER_I_EN_MINUT;
+
+  return `${minuter} minuter och ${sekunder} sekunder`;
+}
+
+const totalaSekunderInput = 111;
+const tidOutput = sekunderTillMinuter(totalaSekunderInput);
+
+console.log("den sista övningen");
+console.log(`Input (Totala Sekunder): ${totalaSekunderInput}`);
+console.log(`Output: ${tidOutput}`);
