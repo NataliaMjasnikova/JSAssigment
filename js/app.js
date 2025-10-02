@@ -136,3 +136,141 @@ const tidOutput = sekunderTillMinuter(totalaSekunderInput);
 console.log("den sista övningen");
 console.log(`Input (Totala Sekunder): ${totalaSekunderInput}`);
 console.log(`Output: ${tidOutput}`);
+
+const string = "Green bottles"
+let numberbottels = 10;
+console.log(numberbottels + " " + string);
+numberbottels -= 1
+console.log( numberbottels + string);
+
+
+
+const birthYear = 2030;
+const nuvarandear = 2025;
+const resultat = AlderKontroll (birthYear, nuvarandear);
+function AlderKontroll (fodelsear, nuvarandear) {
+  const age = nuvarandear - fodelsear;
+
+let isChild = (age >=0 && age <= 10);
+let isTeenager = (age >=11 && age <= 17);
+let isAdult =(age >= 18);
+
+return { age, isChild, isTeenager, isAdult };
+
+
+}
+
+console.log(`Födelseår: ${birthYear}. Nuvarande år: ${nuvarandear}.`);
+console.log(`Beräknad Ålder: ${resultat.age}`);
+
+console.log(`Är barn (0-10): ${resultat.isChild}`);
+console.log(`Är tonåring (11-17): ${resultat.isTeenager}`);
+console.log(`Är vuxen (18+): ${resultat.isAdult}`);
+
+
+
+
+function utforLogiskaKontroller(fodelsear, favoritnummer) {
+  const nuvarandeAr = 2025;
+  const age = nuvarandeAr - fodelsear;
+
+   let kategori;
+  if (age < 0) {
+    kategori = "FEL: Födelseåret är i framtiden.";
+  } else if (age >= 18) {
+    kategori = "You are an adult";
+  } else if (age >= 11) {
+    kategori = "You are a teenager";
+  } else {
+    kategori = "You are a child";
+  }
+
+    const storstaNumret = (age > favoritnummer)
+    ? "Åldern"
+    : (favoritnummer > age ? "Favoritnumret" : "Båda är lika");
+
+    const uddaEllerJamnt = (favoritnummer % 2 === 0) ? "Jämnt" : "Udda";
+
+  return { age, kategori, storstaNumret, uddaEllerJamnt };
+}
+
+
+
+
+let birthYear1 = 2035;
+let favoriteNumber1 = 73;
+
+const resultat1 = utforLogiskaKontroller(birthYear1, favoriteNumber1);
+console.log(`\n--- Test 1 (Född: ${birthYear1}, Ålder: ${resultat1.age}, Favorit: ${favoriteNumber1}) ---`);
+console.log(`Ålderskategori: ${resultat1.kategori}`);
+console.log(`Störst nummer: ${resultat1.storstaNumret} är störst.`);
+console.log(`Favoritnummer ${favoriteNumber1} är: ${resultat1.uddaEllerJamnt}.`);
+
+
+let birthYear2 = 2018;
+let favoriteNumber2 = 4;
+
+const resultat2 = utforLogiskaKontroller(birthYear2, favoriteNumber2);
+console.log(`\n--- Test 2 (Född: ${birthYear2}, Ålder: ${resultat2.age}, Favorit: ${favoriteNumber2}) ---`);
+console.log(`Ålderskategori: ${resultat2.kategori}`);
+console.log(`Störst nummer: ${resultat2.storstaNumret} är störst.`);
+console.log(`Favoritnummer ${favoriteNumber2} är: ${resultat2.uddaEllerJamnt}.`);
+
+
+function makelasange () {
+  console.log("Fry meat.");
+  console.log("Cut onions.");
+  console.log("Fry onions.");
+  console.log("Add tomato sauce.");
+  console.log("Add spices.");
+  console.log("Boil.");
+}
+makelasange();
+let isHungry = false;
+//breakfast
+if(isHungry) {
+  makelasange()
+}
+isHungry = true;
+
+//lunch
+if(isHungry) {
+  makelasange();}
+//dinner
+if(isHungry) {
+  makelasange();}
+
+let listExample  = [1,1,2,3,4,5,6]
+listExample.forEach (char => console.log(char));
+
+function walking () {
+ console.log("Move Forward.");
+ console.log("Turn Right.");
+
+}
+walking()
+
+function Move(kommandoLista) {
+  kommandoLista.forEach(kommando => {
+    if (kommando === "F") {
+      console.log("Move Forward.");
+    } else if (kommando === "R") {
+      console.log("Turn Right.");
+    }
+
+  });
+}
+
+
+
+
+
+
+let Kämpaigen = ["F", "F", "F", "R", "R", "F", "F", "F", "R", "R", "R", "F", "F", "F", "R", "R", "R", "F", "R", "R", "F"];
+Kämpaigen.forEach(kommando => {
+  if (kommando === "F") {
+    console.log("Kämpa.");
+  } else if (kommando === "R") {
+    console.log("Kämpa på nu.");
+  }
+});
