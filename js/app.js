@@ -274,3 +274,15 @@ Kämpaigen.forEach(kommando => {
     console.log("Kämpa på nu.");
   }
 });
+
+function kvadreraTal(tal) {
+  return tal * tal;
+}
+const start = 4;
+const Resultat = kvadreraTal(start);
+console.log(start);
+console.log(Resultat);
+
+
+
+await fetch(input: "http://www.themealdb.com/api/json/v1/1/search.php?f=a")
