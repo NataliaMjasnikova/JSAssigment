@@ -285,4 +285,57 @@ console.log(Resultat);
 
 
 
-await fetch(input: "http://www.themealdb.com/api/json/v1/1/search.php?f=a")
+/* Uppgifter den 15 oktober */
+
+// 1
+for (let i = 1 ; i < 13; ++i) {
+  console.log( Math.floor(Math.random() * 6) + 1);
+
+}
+//2
+
+for(let i = 1 ; i <=1024; i*=2) {
+  console.log( i);
+}
+
+//3
+for(let i = 10 ; i >= 0; --i) {
+  console.log( i);
+}
+//4
+function numPow(num1, num2) {
+  // Variabeln måste deklareras (med let) och initialiseras till 1 för multiplikation
+  let sum = 1;
+
+  // Loopen körs num2 gånger
+  for (let i = 1; i <= num2; ++i) {
+      sum = sum * num1;
+  }
+
+  return sum;
+}
+numPow(4, 3);
+
+const listEx= [1,"give me more",1,2,3,5,8];
+for(let i = 0; i <listEx.length; i++) {
+  console.log(listEx[i]);
+}
+
+let randNumList =[  ];
+
+
+const MAX_TAL = 10000;
+for (let i = 0; i <= MAX_TAL; i++) {
+  randNumList.push(Math.floor(Math.random() * 10));
+}
+
+for (let i = 0; i <= 10; i++){
+  let sumRes = 0;
+  for(let j = 1; j < MAX_TAL; j++){
+if( i==randNumList[i]){++sumRes;}
+  }
+  console.log(i + "förrekommer" + sumRes);
+}
+console.log(randNumList);
+
+
